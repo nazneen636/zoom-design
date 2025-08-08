@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1753px;
+  margin: auto;
+}
+
+/* swiper slider */
+.swiper-pagination-bullet-active {
+  background: #2b2f42c7 !important;
+}
+
+.swiper-pagination-bullet {
+  /* margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px); */
+  background: #ffffff;
+  width: 14px !important;
+  height: 14px !important;
+  border-radius: 0 !important;
+}
+/* swiper slider */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background: #ffffff;
+  width: 14px !important;
+  height: 14px !important;
+  border-radius: 0 !important;
+  opacity: 0.6;
+}

@@ -4,10 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/grid";
 import "swiper/css/navigation";
 
 // import required modules
-import { Navigation } from "swiper/modules";
+import { Navigation, Grid } from "swiper/modules";
 import { MdPlayArrow } from "react-icons/md";
 import { useGetAllProductQuery } from "../../Features/api/ProductApi";
 import ProductCardSkeleton from "../common/ProductSkeleton";
@@ -36,8 +37,12 @@ const Popular = () => {
         </h2>
         <Swiper
           spaceBetween={30}
+          grid={{
+            rows: 2,
+            fill: "row",
+          }}
           navigation={{ prevEl: ".prev", nextEl: ".next" }}
-          modules={[Navigation]}
+          modules={[Navigation, Grid]}
           slidesPerView={4}
           // style={{ paddingRight: 0 }}
         >
